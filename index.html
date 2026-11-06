@@ -1,20 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QR CODE</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <p>Enter your Text or URL</p>
-        <input type="text" placeholder="Text or URL" autocomplete="off" spellcheck="false" id="qrText">
-        <div id="qrDiv">
-            <img src="" id="qrImg">
-        </div>
+      <p>Enter your Text or URL</p>
+      <input
+        type="text"
+        placeholder="Text or URL"
+        autocomplete="off"
+        spellcheck="false"
+        id="qrText"
+      />
+      <div id="qrDiv">
+        <img src="" id="qrImg" />
+      </div>
+      <div class="btns">
         <button class="btn">Generate QR Code</button>
+       
+          <button class="btndwn"><i class="fa-solid fa-download"></i></button>
+       
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

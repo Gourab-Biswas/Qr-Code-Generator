@@ -24,3 +24,22 @@ let makeQr = () =>{
 
 
 button.addEventListener("click",makeQr)
+
+
+let downloadBtn = document.querySelector(".btndwn");
+
+downloadBtn.addEventListener("click", async () => {
+
+    if(qrText.value.length>0){
+    let response = await fetch(qrImg.src);
+    let blob = await response.blob();
+
+    let link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = `${qrText.value}.png`;
+
+    link.click();
+
+    URL.revokeObjectURL(link.href);
+    }
+});
