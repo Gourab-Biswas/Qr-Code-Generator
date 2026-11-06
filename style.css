@@ -64,3 +64,38 @@ body {
 
     }
 }
+
+#qrDiv{
+    transition: all 0.8s linear;
+    /* height: 30px; */
+    width: 50%;
+}
+#qrImg{
+    width: 100%;
+}
+
+#qrDiv.show{
+    margin: 10px auto;
+    padding: 5px;
+    border: 2px solid;
+    /* max-height: 40px; */
+}
+
+#qrText.shake{
+    animation: shake 0.5s linear 2;
+    border: 1px solid red;
+}
+
+@keyframes shake{
+    0%{
+            transform: translateX(0px);
+    }25%{
+        transform: translateX(-2px);
+    }50%{
+        transform: translateX(0px);
+    }75%{
+        transform: translateX(+2px);
+    }100%{
+        transform: translateX(0px);
+    }
+}
